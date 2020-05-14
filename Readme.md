@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Victor Shifrin](https://up.htmlacademy.ru/htmlcss/28/user/1255759).
-* Наставник: `Сергей Кравченко`.
+* Наставник: [Сергей Кравченко](https://htmlacademy.ru/profile/id13921)
 
 ---
 
