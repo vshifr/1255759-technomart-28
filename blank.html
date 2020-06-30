@@ -11,41 +11,44 @@
 </head>
 
 <body>
-  <header class="main-page-header">
-    <div class="user-nav">
-      <span class="header-logo-wrapper"> 
-            <a aria-label="Интернет-магазин Техномарт" href="index.html" class="logo-header"><img class="logo-img" src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт"></a>
-          </span>
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get" >
-        <input class="search-field" type="search" id="search-field" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
-        </form>
-        <span class="favorites"><a>Закладки: <span>0</span> </a> </span>
-        <span class="cart"><a>Корзина: <span>0</span></a></span>
-        <span class="go-to-cart"><a>Оформить заказ </a></span>
-    </div>
-      
-    <h1 class="main-title">
+  <header class="page-header">
+    <a class="header-logo" href="index.html" aria-label="На главную"><img src="img/logo-technomart.svg"  alt="Логотип интернет-магазина Техномарт"></a>
+    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get" >
+      <input class="user-menu search-field" type="search" id="search-field" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
+      <svg class="search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" fill="#fff" opacity=".3"/></svg>
+    </form>
+    <a class="user-menu favorites"><svg class="fave-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" fill="#fff" opacity=".3"/></svg> Закладки: <span>0</span> </a> 
+    <a class="user-menu cart-added"><svg class="cart-icon" width="15" height="15"  xmlns="http://www.w3.org/2000/svg"><g><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z" fill="#fff" opacity=".3"/></g></svg>Корзина: <span>0</span></a>
+    <a class="user-menu go-to-cart">Оформить заказ </a>
+
+    <p class="main-title">
       Интернет-магазин строительных материалов <br>
       и инструментов для ремонта
-    </h1>
-
-    <p class="contacts-header">
-      <a class="call-number" href="tel:+78125550555">+7(812)555-05-55</a>
+    </p>
+    <p class="page-header-contacts">
+      <a class="call-number" href="tel:+78125550555"> +7(812)555-05-55</a>
       г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
     </p>
-    <div class="login-register">
-      <a class="login" href="blank.html">Войти</a>
-      <a href="blank.html">Регистрация</a>
+    <div class="user-nav">
+      <p class="user-block">
+        <a class="user-block user-profile" href="blank.html"><svg width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" fill="#C5C5C5"/></svg>Равшан Джамшутович</a>
+
+        <a class="user-block user-logout" href="blank.html" aria-label="Выйти из профиля"><svg width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 9L11.125.5v6h-6v5h6v6L20 9z" fill="#C5C5C5"/><path d="M2.106 14.452V3.548c.018-.376.171-1.057 1.01-1.057h5.027V.5H3.116C.938.5.112 2.31.087 3.527v10.946C.112 15.689.938 17.5 3.116 17.5h5.027v-1.99H3.116c-.839 0-.992-.683-1.01-1.058z" fill="#C5C5C5"/></svg></a>
+      </p>
+      <p class="user-links">
+        <a href="blank.html">Мои заказы</a>
+        <a href="blank.html">Личный Кабинет</a>
+      </p>
     </div>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li> <a href="index.html">Главная</a> </li>
-        <li> <a href="blank.html">Компания</a> </li>
-        <li> <a href="catalog.html">Каталог</a> </li>
-        <li> <a href="blank.html">Новости</a></li>
-        <li> <a href="blank.html">Спецпредложения</a></li>
-        <li> <a href="blank.html">Доставка</a></li>
-        <li> <a href="blank.html">Контакты</a></li>
+    <nav>
+      <ul class="main-navigation-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="blank.html">Компания</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="blank.html">Новости</a></li>
+        <li><a href="blank.html">Спецпредложения</a></li>
+        <li><a href="blank.html">Доставка</a></li>
+        <li><a href="blank.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -56,37 +59,39 @@
     </h1>
   </main>
 
-  <footer class="main-page-footer">
+  <footer class="page-footer">
     <div class="footer-top">  
-      <div class="footer-logo-wrapper">
-        <a href="index.html" aria-label="На главную""><img src="img/logo-technomart.svg" style="background-color:#293449" alt="Логотип интернет-магазина Техномарт"></a>
+      <div class="footer-top-left">
+        <a class="footer-logo" href="index.html" aria-label="На главную""><img src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт"></a>
+        <p class="footer-contacts">
+          г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8 <br>
+          <a href="tel:+78125550555">+7(812)555-05-55</a>
+        </p>
       </div>
-      <ul class="footer-nav">
-        <li><a href="blank.html">Компания</a></li>
-        <li><a href="blank.html">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <p class="footer-contacts">
-        г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8 <br>
-        <a href="tel:+78125550555">+7(812)555-05-55</a>
-      </p>
-      <ul class="footer-nav-other">
-        <li><a href="blank.html">Материалы</a></li>
-        <li><a href="blank.html">Техника</a></li>
-        <li><a href="blank.html">Инструмент</a></li>
-        <li><a href="blank.html">Спецпредложения</a></li>
-      </ul>
-      <div>
-    </div>
+      <div class="footer-top-right">
+       <ul class="footer-nav">
+         <li><a href="blank.html">Компания</a></li>
+         <li><a href="blank.html">Новости</a></li>
+         <li><a href="catalog.html">Каталог</a></li>
+         <li><a href="blank.html">Доставка</a></li>
+         <li><a href="blank.html">Контакты</a></li>
+       </ul>
+       <ul class="footer-subnav">
+         <li><a href="blank.html">Материалы</a></li>
+         <li><a href="blank.html">Техника</a></li>
+         <li><a href="blank.html">Инструмент</a></li>
+         <li><a href="blank.html">Спецпредложения</a></li>
+       </ul>
+      </div>
+    </div> 
+
     <div class="footer-bottom">  
       <p class="copyright">
         ©2010-2019 Компания "Техномарт"<br>
         Все права защищены.
       </p>
       <section class="socials">
-        <h2>Мы в соцсетях</h2>
+        <h2 class="visually hidden">Мы в соцсетях</h2>
         <ul class="socials-list">
           <li class="socials-item"><a href="" aria-label="Вконтакте"></a></li>
           <li class="socials-item"><a href="" aria-label="Facebook"></a></li>
